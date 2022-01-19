@@ -68,7 +68,7 @@ export const DataSet = () => {
                 Edit Testingsss
               </Button>
               <Button size="small" onClick={clickDeleteHandler} color="error">
-                Delete
+                Delete testing
               </Button>
               {dataSet.State === 'Draft' && (
                 <Button size="small" onClick={clickPublishHandler} color="success">
