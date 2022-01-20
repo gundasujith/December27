@@ -72,7 +72,7 @@ export const DataSet = () => {
               </Button>
               {dataSet.State === 'Draft' && (
                 <Button size="small" onClick={clickPublishHandler} color="success">
-                  Publish
+                  Publish edited
                 </Button>
               )}
             </Grid>
