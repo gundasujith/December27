@@ -1,16 +1,16 @@
 pipeline {
     agent {
-        dockerfile { dir 'folder2' }
-//         docker {
-//             image 'node:16.13.1-buster'
-//             args '-p 3000:3000'
-//         }
+       // dockerfile { dir 'folder2' }
+        docker {
+            image 'node:16.13.1-buster'
+            args '-p 3000:3000'
+        }
     }
-//     stages {
-//         stage('Build') {
-//             steps {
-//                 sh 'npm install'
-//             }
-//         }
-//     }
+    stages {
+        stage('Build') {
+            steps {
+                sh 'rm package-lock.json && npm i'
+            }
+        }
+    }
 }
