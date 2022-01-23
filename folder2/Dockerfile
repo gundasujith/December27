@@ -4,7 +4,7 @@ WORKDIR /app
 
 COPY package.json ./
 
-RUN npm install
+RUN rm package-lock.json && npm i
 
 ENV REACT_APP_BACKEND_BASE_URL http://localhost:8080
 
