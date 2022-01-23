@@ -1,5 +1,8 @@
 pipeline {
     agent {
+    dockerfile { dir 'folder2' }
+    }
+    agent {
         docker {
             image 'node:16.13.1-buster'
             args '-p 3000:3000'
