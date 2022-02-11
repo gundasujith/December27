@@ -287,7 +287,7 @@ export const DataSetList = () => {
                 startIcon={<AddOutlinedIcon />}
                 sx={{ ml: '25px' }}
                 onClick={handleOpen}>
-                Add Data Set on Feb 10 2022
+                Add Data Set on Feb 10
               </Button>
             </Grid>
             <Divider />
