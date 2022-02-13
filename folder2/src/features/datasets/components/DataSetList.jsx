@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-// import { Grid, List, ListItem, Pagination, Stack } from '@mui/material';
 import { Grid, Pagination, Snackbar, Stack } from '@mui/material';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
@@ -13,11 +12,10 @@ import { useHistory } from 'react-router-dom';
 import DataSetCardList from './DataSetCardList';
 import Backdrop from '@mui/material/Backdrop';
 import CircularProgress from '@mui/material/CircularProgress';
-import { useForm } from 'react-hook-form';
 import MuiAlert from '@mui/material/Alert';
 import DataSetConfirmDeleteModal from './DataSetConfirmDeleteModal';
+import { DEAFULT_DATA_SETS_PER_PAGE } from './GetSuccessMessage';
 
-const DEAFULT_DATA_SETS_PER_PAGE = 8;
 export const DataSetList = () => {
   const history = useHistory();
   const [open, setOpen] = useState(false);
@@ -38,6 +36,9 @@ export const DataSetList = () => {
   const [openSuccess, setOpenSuccess] = React.useState(false);
   const [openError, setOpenError] = React.useState(false);
   const [errorMessage, setErrorMessage] = useState(null);
+  const Testing =()=>{
+    console.info("testing")
+  };
 
   useEffect(() => {
     // PageStartIndex
@@ -264,6 +265,9 @@ export const DataSetList = () => {
         setOpen(false);
     }
   };
+  const testing =()=>{
+    console.log("testing function")
+  }
   return (
     <>
       <Box>
